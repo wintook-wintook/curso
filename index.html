@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Moderno</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">📊 DashBoard Pro</div>
+            <div class="user-info">
+                <span id="current-time"></span>
+                <div class="user-avatar" onclick="toggleUserMenu()">JD</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div>
+                        <div class="stat-value" id="total-users">12,458</div>
+                        <div class="stat-label">Usuarios Totales</div>
+                        <div class="stat-change positive">↑ 12% vs mes anterior</div>
+                    </div>
+                    <div class="stat-icon purple">👥</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div>
+                        <div class="stat-value" id="revenue">$84,250</div>
+                        <div class="stat-label">Ingresos del Mes</div>
+                        <div class="stat-change positive">↑ 8% vs mes anterior</div>
+                    </div>
+                    <div class="stat-icon green">💰</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div>
+                        <div class="stat-value" id="orders">1,847</div>
+                        <div class="stat-label">Pedidos</div>
+                        <div class="stat-change negative">↓ 3% vs mes anterior</div>
+                    </div>
+                    <div class="stat-icon orange">📦</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div>
+                        <div class="stat-value" id="conversion">3.2%</div>
+                        <div class="stat-label">Tasa de Conversión</div>
+                        <div class="stat-change positive">↑ 0.8% vs mes anterior</div>
+                    </div>
+                    <div class="stat-icon red">📈</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="chart-section">
+            <div class="chart-card">
+                <h2 class="chart-title">Ventas del Último Mes</h2>
+                <div class="chart-placeholder">Gráfico de Ventas</div>
+            </div>
+
+            <div class="chart-card">
+                <h2 class="chart-title">Actividad Reciente</h2>
+                <div>
+                    <div class="activity-item">
+                        <div class="activity-time">Hace 5 minutos</div>
+                        <div class="activity-text">Nueva venta realizada por $250</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-time">Hace 23 minutos</div>
+                        <div class="activity-text">Usuario nuevo registrado</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-time">Hace 1 hora</div>
+                        <div class="activity-text">Pedido #1847 completado</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-time">Hace 2 horas</div>
+                        <div class="activity-text">Actualización del sistema</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-card">
+            <h2 class="chart-title">Últimas Transacciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Monto</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="transactions-body">
+                    <tr>
+                        <td>#1001</td>
+                        <td>María García</td>
+                        <td>Laptop Pro</td>
+                        <td>$1,299</td>
+                        <td><span class="status-badge completed">Completado</span></td>
+                        <td>2025-10-14</td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Juan Pérez</td>
+                        <td>Mouse Inalámbrico</td>
+                        <td>$45</td>
+                        <td><span class="status-badge pending">Pendiente</span></td>
+                        <td>2025-10-14</td>
+                    </tr>
+                    <tr>
+                        <td>#1003</td>
+                        <td>Ana Martínez</td>
+                        <td>Teclado Mecánico</td>
+                        <td>$89</td>
+                        <td><span class="status-badge completed">Completado</span></td>
+                        <td>2025-10-13</td>
+                    </tr>
+                    <tr>
+                        <td>#1004</td>
+                        <td>Carlos López</td>
+                        <td>Monitor 4K</td>
+                        <td>$450</td>
+                        <td><span class="status-badge cancelled">Cancelado</span></td>
+                        <td>2025-10-13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 DashBoard Pro. Todos los derechos reservados.
+            </div>
+            <div class="footer-links">
+                <a href="#" onclick="return false;">Privacidad</a>
+                <a href="#" onclick="return false;">Términos</a>
+                <a href="#" onclick="return false;">Soporte</a>
+                <a href="#" onclick="return false;">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
